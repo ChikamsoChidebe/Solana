@@ -1,0 +1,25 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+carbon_marketplace = "CarbMktpLace11111111111111111111111111111111"
+carbon_verification = "CarbVerify11111111111111111111111111111111"
+carbon_registry = "CarbRegistry1111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[workspace]
+members = [
+    "programs/carbon-marketplace",
+    "programs/carbon-verification", 
+    "programs/carbon-registry"
+]

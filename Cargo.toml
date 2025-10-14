@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "programs/carbon-marketplace",
+    "programs/carbon-verification",
+    "programs/carbon-registry",
+    "app"
+]
+
+[workspace.dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+solana-program = "~1.16.0"
+spl-token = "4.0.0"
+spl-associated-token-account = "2.2.0"
